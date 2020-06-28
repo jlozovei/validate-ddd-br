@@ -1,7 +1,7 @@
 {
   "name": "validate-ddd-br",
   "version": "0.0.0-development",
-  "description": "",
+  "description": "A nice JS package to validate brazilian phone number's area code (DDD).",
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
@@ -36,6 +36,7 @@
     "husky": "^4.2.5",
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
+    "rollup-plugin-node-builtins": "^2.1.2",
     "semantic-release": "^17.1.1"
   },
   "dependencies": {
