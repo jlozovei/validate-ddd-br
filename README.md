@@ -1,6 +1,9 @@
 # validate-ddd-br
 A nice JS package to validate the existence of a brazilian phone number's area code (called _DDD_). 🇧🇷 :phone:
 
+[![codecov](https://codecov.io/gh/jlozovei/validate-ddd-br/branch/master/graph/badge.svg)](https://codecov.io/gh/jlozovei/validate-ddd-br)
+![Release](https://github.com/jlozovei/validate-ddd-br/workflows/Release/badge.svg)
+
 
 ## :closed_book: Usage
 First things first - install the package using `npm` or `yarn`:
