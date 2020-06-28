@@ -20,7 +20,7 @@ After that, import the helper wherever you want to use it:
 import { validateDDD } from 'validate-ddd-br';
 
 // commonjs
-const validateDDD = require('validate-ddd-br');
+const validateBrazilianDDD = require('validate-ddd-br');
 ```
 
 Then, you'll be able to use it:
@@ -29,12 +29,15 @@ Then, you'll be able to use it:
 ```js
 // with integer value
 const isValid = validateDDD(41); // true
+// commonjs = const isValid = validateBrazilianDDD.validateDDD(41);
 
 // with string value
 const isValid = validateDDD('40'); // false
+// commonjs = const isValid = validateBrazilianDDD.validateDDD('40');
 
 // or with a phone number - it must be provided within a mask to work!
 const isValid = validateDDD('(12) 99999-9999'); // true
+// commonjs = const isValid = validateBrazilianDDD.validateDDD('(12) 99999-9999');
 ```
 
 ### 📍 Localization
@@ -43,8 +46,11 @@ It can also tell from where in Brazil the DDD is:
 ```js
 import { isFrom } from 'validate-ddd-br';
 
-const whereFrom = isFrom('21') // { region: 'Rio de Janeiro', state: 'RJ' }
-const whereFrom = isFrom('(31) 99999-9999') // { region: 'Belo Horizonte', state: 'MG' }
+const whereFrom = isFrom('21'); // { region: 'Rio de Janeiro', state: 'RJ' }
+// commonjs = const isValid = validateBrazilianDDD.isFrom('21');
+
+const whereFrom = isFrom('(31) 99999-9999'); // { region: 'Belo Horizonte', state: 'MG' }
+// commonjs = const isValid = validateBrazilianDDD.isFrom('(31) 99999-9999');
 ```
 
 **Important: both methods accept phone numbers, but you must provide them within the following mask: _(xx) xxxxx-xxxx_**
