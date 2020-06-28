@@ -12,7 +12,7 @@ const isFrom = (dddOrPhone) => {
   const isValidDDD = validateDDD(dddOrPhone);
 
   if (!Boolean(isValidDDD)) {
-    throw new Error('This DDD does not exist in Brazil!');
+    throw new Error(`This DDD does not exist in Brazil! - ${dddOrPhone}`);
   }
 
   const formattedDDD = getDDD(dddOrPhone);
