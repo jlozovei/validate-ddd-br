@@ -35,7 +35,7 @@ const isValid = validateDDD(41); // true
 // commonjs = const isValid = validateBrazilianDDD.validateDDD(41);
 
 // with string value
-const isValid = validateDDD('40'); // false
+const isValid = validateDDD('41'); // true
 // commonjs = const isValid = validateBrazilianDDD.validateDDD('40');
 
 // or with a phone number - it must be provided within a mask to work!
