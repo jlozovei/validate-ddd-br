@@ -45,11 +45,6 @@
     "@babel/register": "^7.12.1",
     "rollup": "^2.32.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run format"
-    }
-  },
   "jest": {
     "collectCoverageFrom": [
       "*.js"
