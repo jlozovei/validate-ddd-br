@@ -30,14 +30,16 @@
     "brazilian area code"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "eslint": "^7.11.0",
     "eslint-config-prettier": "^6.13.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "husky": "^4.3.0",
+    "husky": "^8.0.3",
     "jest": "^27.3.1",
     "prettier": "^2.1.2",
     "rollup-plugin-node-builtins": "^2.1.2",
-    "semantic-release": "^17.2.1"
+    "semantic-release": "^19.0.3"
   },
   "dependencies": {
     "@babel/core": "^7.12.3",
@@ -45,10 +47,10 @@
     "@babel/register": "^7.12.1",
     "rollup": "^2.32.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run format"
-    }
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "jest": {
     "collectCoverageFrom": [
